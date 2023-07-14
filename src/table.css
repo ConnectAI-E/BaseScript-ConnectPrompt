@@ -1,0 +1,25 @@
+.tableRoot_lkwuf98oij .semi-table-tbody > .semi-table-row > .semi-table-cell-fixed-left,
+.semi-table-tbody > .semi-table-row > .semi-table-cell-fixed-right {
+    background-color: var(--diff-bg-color);
+    background-image: none;
+}
+
+.tableRoot_lkwuf98oij {
+    /* 斑马纹1 */
+    --diff-bg-color-1: rgb(240, 240, 240);
+    /* 斑马纹2 */
+    --diff-bg-color: white;
+}
+.semi-table-tbody > .semi-table-row:hover > .semi-table-row-cell.semi-table-cell-fixed-left::before,
+.semi-table-tbody
+    > .semi-table-row:hover
+    > .semi-table-row-cell.semi-table-cell-fixed-right::before {
+    /* 固定列hover时的背景色 */
+    background-color: var(--diff-bg-color-1);
+    background-image: none;
+}
+.semi-table-tbody > .semi-table-row:hover > .semi-table-row-cell {
+    /*非固定列hover时的背景色*/
+    background-color: var(--diff-bg-color-1);
+    background-image: none;
+}

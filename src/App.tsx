@@ -137,14 +137,14 @@ export default function index() {
 
     return function(prompt, callback) {
       const params = {
-        "prompt": prompt,
-        "max_tokens": 999,
+        "messages": [{"role": "user", "content": prompt}],
+        "model": "gpt-3.5-turbo-16k",
       };
 
-      const response = client.post("https://api.openai.com/v1/engines/text-davinci-003/completions", params);
+      const response = client.post("https://api.openai.com/v1/chat/completions", params);
       response.then((response) => {
         if (response.status === 200) {
-          callback(response.data.choices[0].text.trim());
+          callback(response.data.choices[0].message.content.trim());
         } else {
           callback(false);
         }
@@ -285,7 +285,7 @@ export default function index() {
           }
         </Form.Select>
         <p>Using [content] to stand for the raw input within the prompt, otherwise it will be appended to the end of the prompt</p>
-        <Form.TextArea autosize label="Prompt" field="prompt_id" initValue="帮我写一首关于 [content] 的七言律诗">
+        <Form.TextArea autosize label="Prompt" field="prompt_id" initValue="[content]">
         </Form.TextArea>
 
         <Form.Select style={{ width: '100%' }} label='TargetField' field="target_field_id">

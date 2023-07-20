@@ -1,13 +1,17 @@
-## Running React on Repl.it
 
-[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
+## ConnectPrompt [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/connectai-e/awesome-basescript)
 
-[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
+> 利用OpenAI和提示词来补全字段
 
-Using the two in conjunction is one of the fastest ways to build a web app.
+
+<img width="100%" alt="image" src="https://github.com/ConnectAI-E/BaseScript-ConnectPrompt/assets/50035229/0e9bb457-aad0-48fb-b221-0e0345de8cd0">
 
 ### Getting Started
-- Hit run
-- Edit [App.tsx](#src/App.tsx) and watch it live update!
 
-By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
+1️⃣ clone deme
+```
+git clone https://github.com/ConnectAI-E/BaseScript-ConnectPrompt
+pnpm install
+pnpm dev
+```
+2️⃣ 复制 http://localhost:5173/ 到 多维表格 webview 地址

@@ -27,7 +27,6 @@ language = "nodejs"
     start = "typescript-language-server --stdio"
 
 [deployment]
-build = ["sh", "-c", "npm run build"]
-run = ["sh", "-c", "npm run preview"]
+run = ["sh", "-c", "npm run dev"]
 ignorePorts = false
 deploymentTarget = "gce"

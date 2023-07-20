@@ -3,8 +3,8 @@
 
 > 利用OpenAI和提示词来补全字段
 
-<img width="1726" alt="image" src="https://github.com/ConnectAI-E/BaseScript-ConnectPrompt/assets/50035229/cf71fcb0-f389-41c7-a88e-566abd0efbf9">
 
+<img width="100%" alt="image" src="https://github.com/ConnectAI-E/BaseScript-ConnectPrompt/assets/50035229/0e9bb457-aad0-48fb-b221-0e0345de8cd0">
 
 ### Getting Started
 

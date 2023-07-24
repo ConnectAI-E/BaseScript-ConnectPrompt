@@ -4,6 +4,7 @@ import { Form, Toast, Spin, Tooltip, Button, Col, Row } from "@douyinfe/semi-ui"
 import { IconHelpCircle, IconClose } from '@douyinfe/semi-icons';
 import DelTable from "./table";
 import axios from "axios";
+import "./App.css";
 
 
 
@@ -267,13 +268,17 @@ export default function index() {
         <p>
           Select one specific field as the raw entry, and enter prompt here, you will get what AI and LLM completes for you in your designated field.
         </p>
-        <br />
       </div>
       <Form
         labelPosition='left'
         labelAlign='right'
         getFormApi={(e: any) => formApi.current = e}>
         <Form.Input label='OpenAI Key' field='openai_key'></Form.Input>
+        {/* <Form.Select field="table" label="选择模型" placeholder="请选择">
+          {
+            
+          }
+        </Form.Select> */}
         <Form.Select style={{ width: '100%' }} onChange={onSelectTable} label='Table' field="table_id">
           {
             Array.isArray(tableInfo?.tableMetaList) && tableInfo?.tableMetaList.map(({ id, name }) => <Form.Select.Option key={id} value={id}>{name}</Form.Select.Option>)
@@ -299,7 +304,10 @@ export default function index() {
 
       <Row>
         <Col span={18}>
-          <Button onClick={generate}> Generate Content </Button>
+          <Button className="bt1"
+          theme='solid'
+          type='primary' 
+          onClick={generate}> Generate Content </Button>
         </Col>
       </Row>
       {existing && toDelete && fieldInfo?.fieldMetaList && fieldsValueLists && tableInfo && toDeleteRecordIds.current.length > 0 && <DelTable

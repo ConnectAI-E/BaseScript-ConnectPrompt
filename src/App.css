@@ -1,0 +1,188 @@
+body {
+    margin: 20px;
+    font-family: "PingFang SC";
+    font-size: 14px;
+}
+* {
+    font-family: "PingFang SC";
+}
+body .semi-form-field-label {
+    font-family: "PingFang SC";
+}
+
+.container {
+    width: 100%;
+}
+.semi-select {
+    width: 100%;
+}
+.container .semi-form-vertical .semi-form-field {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.result p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 12px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html .semi-button-secondary {
+    border: 1px solid #1456f0;
+    /* 次要按钮背景色 */
+    --semi-color-secondary: white;
+    color: #1456f0;
+    /* hover背景颜色 */
+    --semi-color-secondary-hover: white;
+}
+html .semi-button {
+    font-weight: 400;
+    font-family: "PingFang SC";
+    border-radius: 6px;
+}
+html .semi-button.bt1 {
+    padding: 5px 26px;
+    background-color: #1456f0;
+}
+html .semi-button-disabled {
+    color: #bbbfc4;
+}
+html .semi-button-disabled.bt1,
+html .semi-button-disabled:not(.semi-button-borderless):not(.semi-button-light):hover {
+    background-color: #bbbfc4;
+    color: white;
+}
+
+html .semi-button.bt1:active,
+html .semi-button-primary:not(.semi-button-borderless):not(.semi-button-light):active {
+    background-color: #0442d2;
+}
+html .semi-button.bt1:hover,
+html .semi-button-primary:not(.semi-button-borderless):not(.semi-button-light):hover {
+    background-color: #336df4;
+}
+html .semi-button.bt2 {
+    padding: 5px 12px;
+}
+html .semi-button.semi-button-loading.bt1 {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+html .semi-button-secondary:hover {
+    --semi-color-secondary-hover: #e0e9ff;
+}
+html .semi-button-secondary:active {
+    --semi-color-secondary-active: #c2d4ff;
+}
+html .semi-button-loading {
+    opacity: 0.6;
+}
+
+.icon {
+    width: 15px;
+    margin-right: 8px;
+}
+.emptyResult {
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    color: #646a73;
+}
+.findBtnContainer {
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: 10px;
+    padding-top: 12px;
+    background-color: white;
+    padding-bottom: 12px;
+}
+
+html .semi-button-disabled.bt2 {
+    border: 1px solid #d0d3d6;
+    background-color: white;
+}
+
+html .semi-select-selection-text .icon {
+    display: none;
+}
+
+/* semi-select-selection-text {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    align-items: center;
+} */
+
+html .semi-select-option-focused {
+}
+
+html .semi-select,
+html .semi-select:active,
+html .semi-input-wrapper {
+    border: 1px solid #d0d3d6;
+    border-radius: 6px;
+    background-color: white;
+}
+html .semi-input-wrapper:hover,
+html .semi-select:hover,
+html .semi-input-wrapper-focus {
+    border-color: var(--semi-color-focus-border);
+}
+
+/* 聚焦的时候 */
+html .semi-select-focus:active,
+html .semi-input-wrapper-focus:active {
+    background-color: white;
+}
+
+html div {
+    --semi-color-fill-0: white;
+    --semi-color-fill-1: white;
+}
+
+html .semi-select-option-list-chosen .semi-select-option-icon {
+    order: 2;
+}
+html .semi-select-option-selected,
+html .semi-select-option-focused {
+    font-weight: 400;
+    color: #1456f0;
+}
+html .semi-select-option-selected .icon path,
+html .semi-select-option-focused .icon path {
+    fill: #1456f0;
+    stroke-width: 1px;
+}
+/* html .semi-select-option-selected svg, */
+html .semi-select-option-selected path {
+    fill: #1456f0;
+    stroke-width: 1px;
+}
+.semi-select-option-text {
+    flex-grow: 1;
+}
+html .semi-form-field-label-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1f2329;
+}
+
+html .semi-input-textarea {
+    border: 1px solid #d0d3d6;
+    border-radius: 6px;
+}
+
+html .semi-input-textarea:hover {
+    border-color: var(--semi-color-focus-border);
+}
